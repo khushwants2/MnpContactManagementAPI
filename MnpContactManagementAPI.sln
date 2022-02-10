@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MnpContactManagementAPI", "MnpContactManagementAPI\MnpContactManagementAPI.csproj", "{C0518EBD-E0D2-4444-981F-84DDE709D230}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MNPDatabaseRepository", "MNPDatabaseRepository\MNPDatabaseRepository.csproj", "{64992288-D318-48CA-9E28-2D1558C0DDE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MNPInterfaces", "MNPInterfaces\MNPInterfaces.csproj", "{324202B9-9C75-45D1-99C3-2060D5BB6500}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MNPModels", "MNPModels\MNPModels.csproj", "{662CBB4A-89FC-4447-93D1-495ED93774B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MNPBusinessLogic", "MNPBusinessLogic\MNPBusinessLogic.csproj", "{EACFA7AC-2E00-4047-8460-02F4FBA0D91D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MNPContactManagementAPI.Tests", "MNPContactManagementAPI.Tests\MNPContactManagementAPI.Tests.csproj", "{606A9FA4-D8BC-4CC2-8D97-577ECAAE6B7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0518EBD-E0D2-4444-981F-84DDE709D230}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0518EBD-E0D2-4444-981F-84DDE709D230}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0518EBD-E0D2-4444-981F-84DDE709D230}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0518EBD-E0D2-4444-981F-84DDE709D230}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64992288-D318-48CA-9E28-2D1558C0DDE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64992288-D318-48CA-9E28-2D1558C0DDE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64992288-D318-48CA-9E28-2D1558C0DDE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64992288-D318-48CA-9E28-2D1558C0DDE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{324202B9-9C75-45D1-99C3-2060D5BB6500}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{324202B9-9C75-45D1-99C3-2060D5BB6500}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{324202B9-9C75-45D1-99C3-2060D5BB6500}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{324202B9-9C75-45D1-99C3-2060D5BB6500}.Release|Any CPU.Build.0 = Release|Any CPU
+		{662CBB4A-89FC-4447-93D1-495ED93774B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{662CBB4A-89FC-4447-93D1-495ED93774B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{662CBB4A-89FC-4447-93D1-495ED93774B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{662CBB4A-89FC-4447-93D1-495ED93774B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EACFA7AC-2E00-4047-8460-02F4FBA0D91D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EACFA7AC-2E00-4047-8460-02F4FBA0D91D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EACFA7AC-2E00-4047-8460-02F4FBA0D91D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EACFA7AC-2E00-4047-8460-02F4FBA0D91D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{606A9FA4-D8BC-4CC2-8D97-577ECAAE6B7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{606A9FA4-D8BC-4CC2-8D97-577ECAAE6B7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{606A9FA4-D8BC-4CC2-8D97-577ECAAE6B7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{606A9FA4-D8BC-4CC2-8D97-577ECAAE6B7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6D9B2F9C-54C0-4EDC-9E7A-568F4F973AA5}
+	EndGlobalSection
+EndGlobal
