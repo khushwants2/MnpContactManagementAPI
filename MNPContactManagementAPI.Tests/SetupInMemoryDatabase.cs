@@ -7,14 +7,23 @@ using System.Threading.Tasks;
 
 namespace MNPContactManagementAPI.Tests
 {
+    /// <summary>
+    /// Respective class to seed database in Memory
+    /// </summary>
     public class SetupInMemoryDatabase
     {        
-
+        /// <summary>
+        /// Constructor will call seed database function to load database into memories
+        /// </summary>
+        /// <param name="mnpContactManagementContext"></param>
         public SetupInMemoryDatabase(MnpContactManagementContext mnpContactManagementContext)
         {
             SeedDatabase(mnpContactManagementContext);
         }
-
+        /// <summary>
+        /// Insert value into temp database
+        /// </summary>
+        /// <param name="dbContext"></param>
         private void SeedDatabase(MnpContactManagementContext dbContext)
         {
             dbContext.CompaniesTables.Add( new CompaniesTable() { Id = 1, ComapanyName = "Google" } );
