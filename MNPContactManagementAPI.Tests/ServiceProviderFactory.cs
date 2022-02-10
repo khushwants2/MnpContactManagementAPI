@@ -17,7 +17,7 @@ namespace MNPContactManagementAPI.Tests
 {
     public class ServiceProviderFactory
     {
-        public static ServiceProvider SetupServiceProvider(ITestOutputHelper testOutputHelper)
+        public ServiceProvider SetupServiceProvider(ITestOutputHelper testOutputHelper)
         {
             IConfiguration configuration = UnitTestConfigHelper.GetConfiguration();
 
@@ -28,15 +28,18 @@ namespace MNPContactManagementAPI.Tests
             var services = new ServiceCollection();
 
             services.AddSingleton(configuration);
+            services.AddEntityFrameworkInMemoryDatabase();
 
             services.AddLogging(logbuilder => 
             { 
                 logbuilder.AddSerilog(XUnitLogger); 
-            });            
+            });
 
+            // generating a unique db name for each.
+            string dbName = Guid.NewGuid().ToString();
             services.AddDbContext<MnpContactManagementContext>(options =>
             {
-                options.UseInMemoryDatabase("MNPContactManagementTest");
+                options.UseInMemoryDatabase(dbName);
             });
                
             services.AddTransient<IContactManagementBusinessLogic, ContactManagementBusinessLogic>();

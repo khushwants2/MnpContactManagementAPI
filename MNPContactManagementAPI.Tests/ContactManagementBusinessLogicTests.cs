@@ -15,7 +15,8 @@ namespace MNPContactManagementAPI.Tests
 
         public ContactManagementBusinessLogicTests(ITestOutputHelper testOutputHelper)
         {
-            _serviceProvider = ServiceProviderFactory.SetupServiceProvider(testOutputHelper);
+            ServiceProviderFactory serviceProviderFactory = new ServiceProviderFactory();
+            _serviceProvider = serviceProviderFactory.SetupServiceProvider(testOutputHelper);
             using (var scope = _serviceProvider.CreateScope())
             {
                 _mnpContactManagementContext = scope.ServiceProvider.GetRequiredService<MnpContactManagementContext>();
