@@ -1,30 +1,30 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+
+using System.Runtime.Serialization;
 
 namespace MNPModels
 {
+    [DataContract]
     public class MnpContactManagementDTO
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int id { get; set; }
-
-        [Required(ErrorMessage = "Name Must be provided")]
-        [StringLength(100, MinimumLength = 5, ErrorMessage = "First Name must be in between 5 and 200 characters.")]
-        public string name { get; set; }
-
-        public string address { get; set; }
-
-        public DateOnly lastdatecontacted { get; set; }
-        public string jobtitle { get; set; }
-
-        public Int64 phone { get; set; }
-
-        public string company_id { get; set; }
-
-        public string email { get; set; }
-
-        public string comments { get; set; }
+        [DataMember]
+        public int Id { get; set; }
+        [DataMember]
+        public string ContactName { get; set; }
+        [DataMember]
+        public string Address { get; set; }
+        [DataMember]
+        public DateTime LastDateContacted { get; set; }
+        [DataMember]
+        public string JobTitle { get; set; }
+        [DataMember]
+        public long Phone { get; set; }
+        [DataMember]
+        public int CompanyId { get; set; }
+        [DataMember]
+        public string Email { get; set; } 
+        [DataMember]
+        public string? Comments { get; set; }
 
 
 

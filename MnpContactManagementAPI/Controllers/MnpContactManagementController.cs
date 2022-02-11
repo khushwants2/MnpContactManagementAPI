@@ -120,7 +120,7 @@ namespace MnpContactManagementAPI.Controllers
         {
             try
             {
-                var mnpContactManagement = _mapper.Map<MnpContactManagementDTO, MnpContactManagement>(mnpContactManagementDTO);
+                var mnpContactManagement = _mapper.Map<MnpContactManagement>(mnpContactManagementDTO);
                 if(!ModelState.IsValid)
                     return BadRequest(HttpStatusCode.BadRequest);
                 if (mnpContactManagement == null)

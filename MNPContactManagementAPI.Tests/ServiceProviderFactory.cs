@@ -38,6 +38,7 @@ namespace MNPContactManagementAPI.Tests
             //Add Configuarions into services
             services.AddSingleton(configuration);
             services.AddEntityFrameworkInMemoryDatabase();
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             //set up logging
             services.AddLogging(logbuilder => 
             { 

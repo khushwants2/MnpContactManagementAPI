@@ -2,7 +2,7 @@
 using MNPDatabaseRepository.Models;
 using MNPModels;
 
-namespace MnpContactManagementAPI
+namespace MNPContactManagementAPI.Tests
 {
     public class ViewModelProfiles: Profile
     {
