@@ -14,6 +14,11 @@ namespace MNPBusinessLogic
             _mnpContactManagementContext = mnpContactManagementContext;
         }
 
+        public void SeedDatabase()
+        {
+            new SetupInMemoryDatabase(_mnpContactManagementContext);
+        }
+
         public List<MnpContactManagement> GetMnpContactManagementTableData()
         {
             try
